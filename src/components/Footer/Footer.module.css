@@ -1,0 +1,104 @@
+.footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 100px;
+    background: url('../../..//public/dec.svg') no-repeat top;
+    background-size: cover;
+    padding: 0 20px 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy{
+    color: #fff;
+    padding: 20px;
+    background: rgba(19, 19, 19, .9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+.copy span{
+    color: #ffa500;
+}
+
+.info{
+    width: 70vw;
+    display: flex;
+    gap: 30px;
+    padding: 0 20px 20px 20px;
+}
+
+.slogan h5{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.slogan,
+.grid{
+    background: rgba(19, 19, 19, .9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    width: 35%;
+    padding: 20px;
+}
+
+.grid{
+    width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+}
+
+.item h6{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    letter-spacing: 1.5;
+    margin-bottom: 15px;
+}
+
+.item p{
+    color: #8a8a8a;
+    font-size: 1rem;
+    letter-spacing: 1.5;
+    transition: ease .6s;
+    cursor: pointer;
+}
+
+.item p:hover{
+    color: #fff;
+}
+
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.logo img{
+    display: block;
+    height: auto;
+    width: 50px;
+}

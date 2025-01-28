@@ -6,7 +6,7 @@ export const metadata = {
   keywords: 'crypto, devcoin, blockchain',
   author: 'Gabdev',
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
 

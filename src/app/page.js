@@ -1,7 +1,10 @@
 import styles from "./page.module.css";
-import Header from '../components/Header/index';
-import Solutions from "../components/Solutions/index";
-import Btn from "../components/Btn/index";
+import Header from '../components/Header';
+import Solutions from "../components/Solutions";
+import Btn from "../components/Btn";
+import Partners from "../components/Partners";
+import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
           <Btn text='Começe agora'/>
       </section>
       <Solutions />
+      <Partners />
+      <Faq />
+      <Footer />
     </>
   );
 }

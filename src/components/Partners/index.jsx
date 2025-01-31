@@ -1,6 +1,6 @@
 import styles from './Partners.module.css';
 import Image from 'next/image';
-import Tesla from '../../../public/tesla.jpg';
+import Tesla from '../../../public/tesla.webp';
 import ETH from '../../../public/eth.svg';
 import HBAR from '../../../public/hedera.svg';
 import Vercel from '../../../public/vercel.svg';

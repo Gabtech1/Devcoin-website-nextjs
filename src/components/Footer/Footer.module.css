@@ -3,7 +3,6 @@
     height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin-top: 100px;
     background: url('../../..//public/dec.svg') no-repeat top;
     background-size: cover;
@@ -14,10 +13,11 @@
 
 .copy{
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     background: rgba(19, 19, 19, .9);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
+    width: 320px;
 }
 
 .copy span{
@@ -25,8 +25,9 @@
 }
 
 .info{
-    width: 70vw;
+    width: 100%;
     display: flex;
+    justify-content: center;
     gap: 30px;
     padding: 0 20px 20px 20px;
 }
@@ -101,4 +102,24 @@
     display: block;
     height: auto;
     width: 50px;
+}
+
+@media (max-width: 800px){
+    .info{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .slogan{
+        width: 320px;
+    }
+    
+    .grid{
+        width: 320px;
+        grid-template-columns: 1fr;
+    }
+
+    .footer{
+        height: auto;
+    }
 }

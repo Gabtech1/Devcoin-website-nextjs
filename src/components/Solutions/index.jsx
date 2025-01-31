@@ -7,7 +7,7 @@ import XRP from '../../../public/xrp.svg';
 import ETH from '../../../public/eth.svg';
 import Partner from '../../../public/partner.svg';
 import Tasks from '../../../public/tasks.svg';
-import Logo from '../../../public/logo.png';
+import Logo from '../../../public/logo.avif';
 import Btn from '../Btn/index';
 
 export default function Solutions() {

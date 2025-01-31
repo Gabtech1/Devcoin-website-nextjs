@@ -26,13 +26,15 @@
     font-weight: lighter;
     letter-spacing: 1.5;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 100%;
     max-width: 90vw;
     padding: 20px;
     gap: 20px;
@@ -72,4 +74,10 @@
 
 .techs:nth-child(1) {
     width: 200px;
+}
+
+@media (max-width:600px){
+    .partners h3{
+        font-size: 1.6rem;
+    }
 }

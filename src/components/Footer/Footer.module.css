@@ -68,6 +68,7 @@
     flex-direction: column;
     gap: 8px;
     padding: 10px;
+    text-align: center;
 }
 
 .item h6{
@@ -121,5 +122,10 @@
 
     .footer{
         height: auto;
+    }
+
+    .copy{
+        font-size: .9rem;
+        text-align: center;
     }
 }

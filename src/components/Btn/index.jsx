@@ -3,6 +3,6 @@ import Link from 'next/link';
 
 export default function Btn(props) {
     return(
-        <Link href='/' className={styles.btn}>{props.text}</Link>
+        <Link href='#' className={styles.btn}>{props.text}</Link>
     );
 }

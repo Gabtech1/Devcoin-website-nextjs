@@ -26,19 +26,21 @@ export default function Solutions() {
                     </div>
 
                     <div className={styles.bottom}>
-                        <div className={styles.crypto}>
-                            <div className={styles.crypto_icon}><Image src={USDT} alt='Real-time analytics icon' /></div>
-                            <div className={styles.description}>
-                                <h3>USDT</h3>
-                                <p>Blockchain descentralizada</p>
+                        <div className={styles.container}>
+                            <div className={styles.crypto}>
+                                <div className={styles.crypto_icon}><Image src={USDT} alt='Real-time analytics icon' /></div>
+                                <div className={styles.description}>
+                                    <h3>USDT</h3>
+                                    <p>Blockchain descentralizada</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div className={styles.crypto2}>
-                            <div className={styles.crypto_icon}><Image src={XRP} alt='Real-time analytics icon' /></div>
-                            <div className={styles.description}>
-                                <h3>XRP</h3>
-                                <p>Blockchain descentralizada</p>
+                            <div className={styles.crypto2}>
+                                <div className={styles.crypto_icon}><Image src={XRP} alt='Real-time analytics icon' /></div>
+                                <div className={styles.description}>
+                                    <h3>XRP</h3>
+                                    <p>Blockchain descentralizada</p>
+                                </div>
                             </div>
                         </div>
                     </div>

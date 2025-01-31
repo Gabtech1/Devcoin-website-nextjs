@@ -10,4 +10,4 @@ Projeto pessoal desenvolvido em nextjs. <br/>
   <img alt="projeto DevLinks" src="./public/preview.png" width="100%">
 </p>
 
-- [Acesse o projeto finalizado, online]()
+- [Acesse o projeto finalizado, online](https://devcoin-website-nextjs.vercel.app/)

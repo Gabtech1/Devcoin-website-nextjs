@@ -99,12 +99,14 @@
 
 .container{
     display: flex;
+    align-items: flex-end;
     gap: 20px;
     width: 100%;
 }
 
 .crypto{
     min-width: 300px;
+    height: 200px;
     display: flex;
     border-radius: 16px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -117,6 +119,7 @@
 
 .bottom .container{
     overflow-x: scroll;
+    scrollbar-width:thin;
 }
 
 .crypto:nth-child(2),
@@ -604,5 +607,14 @@
     .crypto_icon img {
         width: 30px;
         padding: 5px;
+    }
+
+    .container{
+        gap: 10px;
+    }
+    
+    .crypto{
+        min-width: 220px;
+        height: 175px;
     }
 }

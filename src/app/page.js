@@ -1,3 +1,5 @@
+'use client'
+import { useEffect } from "react";
 import styles from "./page.module.css";
 import Header from '../components/Header';
 import Solutions from "../components/Solutions";
@@ -7,10 +9,31 @@ import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 
 export default function Home() {
+  
+  useEffect(() =>{
+    const elements = document.querySelectorAll('.animScroll');
+    const windowTop = window.innerHeight * .6;
+    
+    function scroll() {
+      elements.forEach((el) =>{
+        const elTop = el.getBoundingClientRect().top - windowTop;
+        if(elTop < 0){
+          el.classList.add('active');
+        }
+      })
+    }
+  
+    window.addEventListener('scroll', scroll);
+    scroll();
+  
+  }, []);
+
+
+
   return (
     <>
       <Header />
-      <section className={styles.home}>
+      <section className={`${styles.home} animScroll `}>
         <video autoPlay loop muted playsInline>
           <source src="/home.mp4" type="video/mp4" />
         </video>

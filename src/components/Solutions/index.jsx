@@ -13,7 +13,7 @@ import Btn from '../Btn/index';
 
 export default function Solutions() {
     return (
-        <section className={styles.solutions}>
+        <section className={`${styles.solutions} animScroll `}>
             <h2>Soluções inovadoras na Web3</h2>
             <p className={styles.desc}>Nossa plataforma combina segurança avançada, análises em tempo real e design fácil de usar para fornecer uma experiência de negociação incomparável</p>
             <div className={styles.grid}>

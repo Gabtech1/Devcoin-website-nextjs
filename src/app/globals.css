@@ -13,3 +13,14 @@ html{
 body{
   background-color: #000;
 }
+
+.animScroll{
+  opacity: 0;
+  transform: translate3d(-200px, 0, 0);
+}
+
+.animScroll.active{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 1s ease;
+}

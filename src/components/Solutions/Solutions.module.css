@@ -99,12 +99,12 @@
 
 .container{
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    width: 100%;
 }
 
-.crypto,
-.crypto2 {
-    width: 250px;
+.crypto{
+    min-width: 300px;
     display: flex;
     border-radius: 16px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -115,9 +115,12 @@
     padding: 20px;
 }
 
-.crypto2 {
-    border-radius: 16px 0 0 16px;
-    border-right: 0;
+.bottom .container{
+    overflow-x: scroll;
+}
+
+.crypto:nth-child(2),
+.crypto:nth-child(4) {
     background: url('../../../public/line2.svg') no-repeat bottom;
     background-size: contain;
 }
@@ -139,14 +142,12 @@
     padding: 5px;
 }
 
-.crypto .description h3,
-.crypto2 .description h3 {
+.crypto .description h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
-.crypto .description p,
-.crypto2 .description p {
+.crypto .description p{
     font-size: 0.8rem;
 }
 
@@ -574,16 +575,6 @@
         grid-area: 7 / 1 / 9 / 7;
     }
 
-    .crypto,
-    .crypto2 {
-        overflow: hidden;
-        height: 200px;
-    }
-
-    .item1 .bottom {
-        align-items: flex-end;
-    }
-
     .card1,
     .card2,
     .card3 {
@@ -613,9 +604,5 @@
     .crypto_icon img {
         width: 30px;
         padding: 5px;
-    }
-
-    .bottom .container{
-        overflow: scroll;
     }
 }

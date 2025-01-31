@@ -5,6 +5,7 @@ import Security from '../../../public/security.svg';
 import USDT from '../../../public/usdt.svg';
 import XRP from '../../../public/xrp.svg';
 import ETH from '../../../public/eth.svg';
+import HBAR from '../../../public/hedera.svg';
 import Partner from '../../../public/partner.svg';
 import Tasks from '../../../public/tasks.svg';
 import Logo from '../../../public/logo.avif';
@@ -35,10 +36,26 @@ export default function Solutions() {
                                 </div>
                             </div>
 
-                            <div className={styles.crypto2}>
+                            <div className={styles.crypto}>
                                 <div className={styles.crypto_icon}><Image src={XRP} alt='Real-time analytics icon' /></div>
                                 <div className={styles.description}>
                                     <h3>XRP</h3>
+                                    <p>Blockchain descentralizada</p>
+                                </div>
+                            </div>
+                            
+                            <div className={styles.crypto}>
+                                <div className={styles.crypto_icon}><Image src={ETH} alt='Real-time analytics icon' /></div>
+                                <div className={styles.description}>
+                                    <h3>Ethereum</h3>
+                                    <p>Blockchain descentralizada</p>
+                                </div>
+                            </div>
+
+                            <div className={styles.crypto}>
+                                <div className={styles.crypto_icon}><Image src={HBAR} alt='Real-time analytics icon' /></div>
+                                <div className={styles.description}>
+                                    <h3>HBAR</h3>
                                     <p>Blockchain descentralizada</p>
                                 </div>
                             </div>

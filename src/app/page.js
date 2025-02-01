@@ -9,23 +9,28 @@ import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  
-  useEffect(() =>{
-    const elements = document.querySelectorAll('.animScroll');
-    const windowTop = window.innerHeight * .6;
-    
-    function scroll() {
-      elements.forEach((el) =>{
-        const elTop = el.getBoundingClientRect().top - windowTop;
-        if(elTop < 0){
-          el.classList.add('active');
+
+  useEffect(() => {
+    function initAnimScroll() {
+      const elements = document.querySelectorAll('.animScroll, .animScroll2');
+
+      if (elements.length) {
+        const halfWindow = window.innerHeight * .6;
+        function scroll() {
+          elements.forEach((el) => {
+            const elTop = el.getBoundingClientRect().top - halfWindow;
+            if (elTop < 0) {
+              el.classList.add('active');
+            }
+          })
         }
-      })
+
+        scroll();
+
+        window.addEventListener('scroll', scroll);
+      }
     }
-  
-    window.addEventListener('scroll', scroll);
-    scroll();
-  
+    initAnimScroll()
   }, []);
 
 

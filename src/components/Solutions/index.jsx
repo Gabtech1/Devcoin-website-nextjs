@@ -13,11 +13,11 @@ import Btn from '../Btn/index';
 
 export default function Solutions() {
     return (
-        <section className={`${styles.solutions} animScroll `}>
+        <section className={styles.solutions}>
             <h2>Soluções inovadoras na Web3</h2>
             <p className={styles.desc}>Nossa plataforma combina segurança avançada, análises em tempo real e design fácil de usar para fornecer uma experiência de negociação incomparável</p>
             <div className={styles.grid}>
-                <div className={styles.item1}>
+                <div className={`${styles.item1} animScroll `}>
                     <div className={styles.card_top}>
                         <div className={styles.icon}><Image src={Analytics} alt='Real-time analytics icon' /></div>
                         <div className={styles.description}>
@@ -63,7 +63,7 @@ export default function Solutions() {
                     </div>
                 </div>
 
-                <div className={styles.item2}>
+                <div className={`${styles.item2} animScroll2 `}>
                     <div className={styles.card_top}>
                         <div className={styles.icon}><Image src={Security} alt='Real-time analytics icon' /></div>
                         <div className={styles.description}>
@@ -79,7 +79,7 @@ export default function Solutions() {
                     </div>
                 </div>
 
-                <div className={styles.item3}>
+                <div className={`${styles.item3} animScroll `}>
                     <div className={styles.card_top}>
                         <div className={styles.icon}><Image src={Partner} alt='Real-time analytics icon' /></div>
                         <div className={styles.description}>
@@ -100,7 +100,7 @@ export default function Solutions() {
 
                 </div>
 
-                <div className={styles.item4}>
+                <div className={`${styles.item4} animScroll2 `}>
                     <div className={styles.card_top}>
                         <div className={styles.icon}><Image src={Tasks} alt='Real-time analytics icon' /></div>
                         <div className={styles.description}>
@@ -119,13 +119,13 @@ export default function Solutions() {
             </div>
 
             <div className={styles.dash}>
-                <div className={styles.left}>
+                <div className={`${styles.left} animScroll `}>
                     <h3>Solução completa em um painel para Web3 ALM</h3>
                     <p>Nossa plataforma completa fornece uma solução integrada e segura para gerenciamento abrangente de ativos e passivos Web3, permitindo que você otimize suas operações financeiras na economia descentralizada.</p>
                     <Btn text='Acessar painel' />
                 </div>
 
-                <div className={styles.right}>
+                <div className={`${styles.right} animScroll2 `}>
                     <h4>Sacar cripto</h4>
                     <div className={styles.table}>
                         <div className={styles.col}>

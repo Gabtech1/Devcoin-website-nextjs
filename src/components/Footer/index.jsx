@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.info}>
-                <div className={`${styles.slogan} animScroll2 `}>
+                <div className={styles.slogan}>
                     <h5>Seu futuro financeiro com segurança e transparência.</h5>
                     <Link className={styles.logo} href='/'><Image src={Logo} alt='devcoin logo' />DEVCOIN</Link>
                 </div>
